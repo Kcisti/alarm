@@ -1,84 +1,50 @@
-:root{
-  --carbonGrey : hsl(0, 0%, 7%);
-  --totBlack : hsl(0,0%,0%);
-  --murkyWhite : #D2D2D2;
-  --nightBlue : hsl(236, 47%, 38%);
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #12181b;
 }
-
-*{
-  font-family: 'Poppins', sans-serif;
-  -webkit-text-size-adjust:none;
-  font-size-adjust: none;
-  margin: 0px;
-  padding: 0px;
+* {
   box-sizing: border-box;
 }
-body{
-  background: var(--totBlack);
-  padding: 50px;
-  overflow: hidden;
-}
-
 
 .container {
-  padding-top: 20px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 #clock {
-  font-size: 70px;
-  color: var(--murkyWhite);
-}
-
-#alarm-time{
-  width: 100%;
-  color: var(--murkyWhite);
-  background: var(--carbonGrey);
-  font-size: 18px;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  outline: none;
-  -webkit-appearance:none;
-}
-#alarm-time::-webkit-inner-spin-button,
-#alarm-time::-webkit-calendar-picker-indicator{
-  display: none;
-  -webkit-appearance:none;
+  font-family: "Orbitron", sans-serif;
+  font-size: 15vw;
+  background-image: linear-gradient( 180deg, #70F570 10%, #49C628 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .controls {
   margin-top: 16px;
 }
 
-.btn-btn-primary{
-  background: var(--carbonGrey);
+.button {
+  font-weight: bold;
   border-radius: 5px;
   border: none;
-  color: var(--murkyWhite);
-  padding: 10px;
+  color: white;
+  padding: 4px 8px;
+  margin-left: 4px;
   cursor: pointer;
-  font-size: 18px;
-  width: 100%;
-  text-transform: uppercase;
-  margin-top: 16px;
-  outline: none;
 }
 
-.btn-btn-danger{
-  background-color: var(--nightBlue);
-  border-radius: 5px;
-  border: none;
-  color: var(--murkyWhite);
-  padding: 10px;
-  cursor: pointer;
-  font-size: 18px;
-  text-transform: uppercase;
-  width: 100%;
-  margin-top: 16px;
-  outline: none;
+.set-alarm {
+  background-color: #498afb;
+}
+
+.clear-alarm {
+  background-color: #ff3860;
 }
